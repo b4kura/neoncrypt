@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>neoncrypt</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="boxes">
+        <div class="first-part">
+            <div class="user-input-container">
+                <div class="side-border">
+                    <img draggable="false" (dragstart)="false" src="caixa-input.png" alt="borda input">
+                </div>
+                <div class="input-box">
+                    <textarea id="input" rows="14" cols="24" placeholder="Digite seu texto"></textarea>
+                </div>
+            </div>
+            <div class="small-info-container">
+                <img draggable="false" src="apenas-minusculas.png" alt="separador de informação">
+                <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+            
+            <div class="buttons">
+                <div class="static">
+                    <button id="encrypt-btn" class="btn green-btn"><div class="btn-text">Criptografar</div></button>
+                    <button id="decrypt-btn" class="btn purple-btn"><div class="btn-text">Descriptografar</div></button>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="second-part">
+            <div class="result-container">
+                <div class="result-box">
+                    <img draggable="false" src="caixa-desktop.png" alt="caixa resultado">
+                </div>
+                <div id="output" class="not-found output">
+                    <img draggable="false" src="nao-encontrada.png" alt="não encontrado">
+                    <p class="no-msg">Nenhuma mensagem encontrada.</p>
+                    <p class="desc">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="copy">
+                    <button id="copy-btn" class="btn red-btn hidden"><div id="copy-btn-text" class="btn-text">Copiar</div></button>
+                </div>
+            </div> 
+
+        </div>
+    </section> 
+    <script src="./index.js"></script>
+</body>
+</html>
