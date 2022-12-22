@@ -140,7 +140,7 @@ img {
 }
 
 .btn::before {
-    content: url('btn-deco.png');
+    content: url('./imagens/btn-deco.png');
     position: absolute;
     left: -95px;
     bottom: -65px;
@@ -231,7 +231,7 @@ img {
 
     .result-box img {
         box-sizing: border-box;
-        background: url("caixa-tablet.png") no-repeat center/100%;
+        background: url("./imagens/caixa-tablet.png") no-repeat center/100%;
         width: 400px;
         height: 200px;
         padding-left: 400px;
@@ -281,7 +281,7 @@ img {
 
     .result-box img {
         box-sizing: border-box;
-        background: url("caixa-tablet.png") no-repeat center/100%;
+        background: url("./imagens/caixa-tablet.png") no-repeat center/100%;
         width: 320px;
         height: 160px;
         padding-left: 320px;
