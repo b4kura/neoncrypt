@@ -88,5 +88,5 @@ function hideCopyButton() {
 }
 
 function rejectKeys(input) {
-    input.value = input.value.replace(/[^a-z]\s*/gi, ''); 
+    input.value = input.value.replace(/[^a-z]\s/gi, ''); 
 }
