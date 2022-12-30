@@ -14,7 +14,7 @@
                     <img draggable="false" (dragstart)="false" src="./imagens/caixa-input.png" alt="borda input">
                 </div>
                 <div class="input-box">
-                    <textarea id="input" rows="14" cols="24" placeholder="Digite seu texto"></textarea>
+                    <textarea id="input" rows="14" cols="24" placeholder="Digite seu texto" onkeyup="rejectKeys(this)"></textarea>
                 </div>
             </div>
             <div class="small-info-container">

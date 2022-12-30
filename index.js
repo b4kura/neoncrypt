@@ -86,3 +86,7 @@ function showCopyButton() {
 function hideCopyButton() {
     copyButton.setAttribute('class', 'btn red-btn hidden');
 }
+
+function rejectKeys(input) {
+    input.value = input.value.replace(/[^a-z]\s*/gi, ''); 
+}
